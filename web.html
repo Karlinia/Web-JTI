@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		img{
+			float: left;
+		}
+		.header{
+			background-color: #66CCFF;
+			padding: 0.5px;
+			text-align: center;
+		}
+		.navigation{
+			overflow: hidden;
+			background-color: #FF9933;;
+			border-style: solid;
+			border-color: white;
+		}
+		.navigation a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 16px 18px;
+			text-decoration: none;
+		}
+		.navigation a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga kolom float yang panjang ke bawahnya tidak sama*/
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		/*Kolom pertama dan ketiga*/
+		.aside{
+			width: 16%;
+			background-color: #FFF8DC;
+			border-style: solid;
+			border-color: #66CCFF;
+		}
+		/*Kolom kedua*/
+		.article{
+			width: 68%;
+			background-color: #F8F8FF;
+		}
+		/*Responsive layout - kolom di container menjadi baris*/
+		@media (max-width: 600px){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+		.gallery{
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: left;
+			width: 200px;
+		}
+		h2{
+			text-align: center;
+		}
+		.gallery: hover{
+			border: 1px solid #777;
+		}
+
+		.deskripsi{
+			padding: 10px;
+			text-align: center;
+		}
+		.gallery img{
+			width 10%;
+			height: auto;
+		}
+		h3{
+			text-align: center;
+			color: #FF8C00;
+		}
+		input[type=text]{
+			width: 150px;
+			display: block;
+			margin-bottom: 10px;
+			background-color: #FFFDE7;
+		}
+		input[type=button]{
+			width: 120px;
+			margin-right: 35px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<td align="left"><img src="POLINDRA.png" width="11%"></td>
+		<h1>TEKNIK INFORMATIKA</h1>
+		<h1>POLITEKNIK NEGERI INDRAMAYU</h1>
+		<p> Jl. Lohbener Lama No.08, Lohbener, Indramayu, Legok, Kec. Lohbener, Kabupaten Indramayu, Jawa Barat 45252<p>
+	</div>
+	<div class="navigation">
+		<a href="web.html">Home</a>
+		<a href="TentangJurusan.html">Tentang Jurusan</a>
+		<a href="#">Akademik</a>
+		<a href="#">Kemahasiswaan</a>
+		<a href="#">Laboratorium</a>
+		<a href="Peta.html">Peta</a>
+		<a href="#">Galeri</a>
+		<a href="#">Kontak</a>
+	</div>
+	<div class="container">
+		<div class="aside">
+			<h3>Profil Lulusan</h3>
+			<h4 align="center">D3 Teknik Informatika</h4>
+        	<p> 1. Pemrogram aplikasi (Programmer Application)<br>
+            2. Merancang aplikasi dan basis data (Designer Application and database)<br>
+            3. Admin Jaringan (Networking Administrator)<br>
+            4. Pendukung kebutuhan IT perusahaan/industri (IT Support)<br>
+            5. Intrapreneur / technopreuner<br><br>
+            <h3>Profil Lulusan</h3>
+            <h4 align="center">D4 Rekayasa Perangkat Lunak</h4>
+            1. System Analyst : mampu menganalisis dan menspesifikasikan kebutuhan perangkat lunak berskala besar dengan dokumentasi yang mengacu standar IEEE Std 829-1998 atau standar lain.<br>
+            2. Software Developer : mampu mengembangkan perangkat lunak dengan menerapkan metodologi pengembangan perangkat lunak yang sesuai dengan perkembangan terkini agar menghasilkan perangkat lunak yang sesuai dengan kebutuhan pengguna.<br>
+            3. Software Tester: mampu melakukan pengujian  perangkat lunak menggunakan metode black box dan atau white box sesuai kebutuhan.<br>
+            4. Software Maintenance: mampu melakukan perawatan perangkat lunak dari tingkat sederhana sampai dengan kompleks.<br>
+            5. Technopreneur : Mempu menginternalisasi semangat kemandirian kejuangan dan kewirausahaan, serta mampu menunjukkan sikap bertanggung jawab, jujur, dan disiplin  atas pekerjaan dibidang keahliannya secara mandiri.<br><br>
+		</div>
+		<div class="article">
+			<h2 align="center">VISI</h2>
+			<p align="center">Program Studi Terdepan di bidang Teknik Informatika Tingkat Nasional dan Berdaya Saing Global</p>
+			<h2 align="center">MISI</h2>
+			<p>1. Meningkatkan mutu, akses, dan relevansi pendidikan Politeknik di bidang Teknik Informatika untuk menghasilkan lulusan sesuai kebutuhan pekerjaan;</p>
+			<p>2. Melakukan penelitian terapan dan pengabdian masyarakat di bidang Teknik Informatika untuk mengatasi persoalan industri dan masyarakat;</p>
+			<h2 align="center">TUJUAN</h2>
+			<p>1. Menghasilkan lulusan kompeten dengan ciri ketrampilan kerja tinggi yang mampu bersaing secara global</p>
+			<p>2. Memberikan solusi persoalan industri dan masyarakat tingkat nasional melalui penelitian terapan dan pengabdian kepada masyarakat</p>
+		</div>
+		<div class="aside">
+			<h4>Kirimkan Pesan Anda</h4>
+			<form>
+				Nama Lengkap: <input type="text" name="Name" placeholder="Nama lengkap anda" size="20">
+				Alamat Email: <input type="text" name="Address" placeholder="Alamat Anda" size="20">
+				Pesan: <input type="text" name="Message" placeholder="Tulis pesan disini" size="20">
+				<input type="button" value="Kirim Pesan">
+			</form>
+			<div class="Alumni">
+				
+			</div>
+			<div class="footer">
+				<footer>&copy; 2019 | Design By <a href="https://www.instagram.com/karlinia_/">Nia Karlina</a></footer>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
